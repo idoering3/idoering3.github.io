@@ -12,7 +12,7 @@
         class="hero-video"
         style:transform={`translateY(${scrollY * 0.2}px)`}
     >
-        <ScrollVideo src="/videos/hero.mp4" startScroll={0} endScroll={650} smoothing={0.22} />
+        <ScrollVideo src="/videos/hero-scrub.mp4" startScroll={0} endScroll={650} smoothing={0.22} />
     </div>
 
     <div class="hero pt-8 px-16 pb-24">

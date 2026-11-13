@@ -60,11 +60,13 @@
                 }
 
                 // Let the browser finish its current seek first.
-                if (
-                    !video.seeking &&
-                    Math.abs(video.currentTime - displayedTime) > 0.01
-                ) {
-                    video.currentTime = displayedTime;
+                const fps = 30;
+                const lastFrame = Math.ceil(duration * fps) - 1;
+                const targetFrame = Math.min(Math.floor(displayedTime * fps), lastFrame);
+                const seekTime = targetFrame / fps;
+
+                if (!video.seeking && Math.abs(video.currentTime - seekTime) > 0.001) {
+                    video.currentTime = seekTime;
                 }
             }
 
