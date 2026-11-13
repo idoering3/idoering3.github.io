@@ -29,8 +29,8 @@
     </div>
 </div>
 
-<div class="h-[1500px]">
-    <p>testing {scrollY}</p>
+<div class="h-375">
+    
 </div>
 
 <style>

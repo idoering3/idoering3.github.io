@@ -10,7 +10,7 @@
 		const lenis = new Lenis({
 		autoRaf: true,
 		smoothWheel: true,
-		lerp: 0.12,
+		lerp: 0.16,
 		anchors: true
 		});
 
